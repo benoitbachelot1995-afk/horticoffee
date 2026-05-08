@@ -1,0 +1,33 @@
+const header = document.querySelector("[data-header]");
+const nav = document.querySelector("[data-nav]");
+const navToggle = document.querySelector(".nav-toggle");
+
+const setHeaderState = () => {
+  header.classList.toggle("is-scrolled", window.scrollY > 16);
+};
+
+setHeaderState();
+window.addEventListener("scroll", setHeaderState, { passive: true });
+
+navToggle.addEventListener("click", () => {
+  const isOpen = nav.classList.toggle("is-open");
+  header.classList.toggle("is-open", isOpen);
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+nav.addEventListener("click", (event) => {
+  if (event.target instanceof HTMLAnchorElement) {
+    nav.classList.remove("is-open");
+    header.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+  }
+});
+
+document.querySelector(".newsletter").addEventListener("submit", (event) => {
+  event.preventDefault();
+  const input = event.currentTarget.querySelector("input");
+  if (input.value.trim()) {
+    input.value = "";
+    input.placeholder = "Merci, c'est note";
+  }
+});

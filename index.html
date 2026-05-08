@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hearty Coffee, coffee shop de specialite, brunch artisanal et grains fraichement torrefies."
+    />
+    <title>Hearty Coffee - Coffee shop de specialite</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Hearty Coffee accueil">
+        <img class="brand-logo" src="assets/logo-hc.png" alt="" aria-hidden="true" />
+        <span>Hearty Coffee</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="#menu">Carte</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#adresse">Adresse</a>
+        <a class="nav-cta" href="#adresse">Venir</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hearty-coffee-hero.png"
+          alt="Comptoir chaleureux avec cafe, viennoiseries et paquets de grains Hearty Coffee"
+        />
+        <div class="hero-scrim"></div>
+        <div class="hero-grid">
+          <p class="eyebrow">Specialty coffee · brunch · beans</p>
+          <h1 id="hero-title">Hearty<br />Coffee</h1>
+          <p class="hero-copy">
+            Des cafés de saison, une cuisine courte, des tables qui restent chaudes
+            toute la matinée.
+          </p>
+          <a class="button primary" href="#menu">Voir la carte</a>
+          <div class="hero-logo-lockup">
+            <img
+              src="assets/logo-hc.png"
+              alt="Logo Hearty Coffee - Healthy body, balanced mind"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="intro band" aria-label="Signature Hearty Coffee">
+        <div class="intro-line">Un cafe qui prend son temps.</div>
+        <div class="intro-copy">
+          <p>
+            Hearty Coffee assemble l'intensite d'un espresso precis, la douceur
+            d'une boulangerie de quartier et le calme d'un atelier lumineux.
+          </p>
+          <p>
+            Grains tracables, laits bien textures, assiettes simples: tout est
+            pense pour le premier cafe du jour comme pour le dernier rendez-vous.
+          </p>
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section" aria-labelledby="menu-title">
+        <div class="section-kicker">Carte courte</div>
+        <div class="section-heading">
+          <h2 id="menu-title">Rituels du matin</h2>
+          <p>Une selection lisible, saisonniere, faite pour commander vite et revenir souvent.</p>
+        </div>
+
+        <div class="menu-layout">
+          <article class="feature-tile signature">
+            <p>Signature</p>
+            <h3>Hearty Latte</h3>
+            <span>Espresso double, lait velours, pointe de cacao cru.</span>
+            <strong>5.80</strong>
+          </article>
+
+          <div class="menu-list" aria-label="Boissons">
+            <div class="menu-item">
+              <span>Espresso</span>
+              <small>court, net, chocolat noir</small>
+              <strong>3.20</strong>
+            </div>
+            <div class="menu-item">
+              <span>Flat White</span>
+              <small>double shot, lait micro-mousse</small>
+              <strong>5.20</strong>
+            </div>
+            <div class="menu-item">
+              <span>Cold Brew</span>
+              <small>infusion 18h, orange, tonic</small>
+              <strong>5.90</strong>
+            </div>
+            <div class="menu-item">
+              <span>Matcha Cloud</span>
+              <small>matcha ceremonial, lait avoine</small>
+              <strong>6.20</strong>
+            </div>
+          </div>
+
+          <article class="feature-tile pastry">
+            <p>Bakery</p>
+            <h3>Croissant noisette</h3>
+            <span>Beurre AOP, creme de noisette grillee.</span>
+            <strong>4.60</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="atelier" class="atelier band" aria-labelledby="atelier-title">
+        <div class="atelier-visual" aria-hidden="true">
+          <div class="bean-pack pack-one">
+            <span>Hearty</span>
+            <strong>House<br />Roast</strong>
+          </div>
+          <div class="bean-pack pack-two">
+            <span>Single Origin</span>
+            <strong>Peru<br />Honey</strong>
+          </div>
+        </div>
+        <div class="atelier-content">
+          <p class="section-kicker">Atelier grains</p>
+          <h2 id="atelier-title">Torrefie pour le comptoir, emballe pour la maison.</h2>
+          <p>
+            Chaque sac indique le profil, la methode conseillee et la date de
+            torrefaction. On moud a la demande, du filtre doux a l'espresso plus
+            nerveux.
+          </p>
+          <a class="button secondary" href="#adresse">Passer au shop</a>
+        </div>
+      </section>
+
+      <section class="journal" aria-label="Temps forts">
+        <div class="journal-item">
+          <span>07:30</span>
+          <p>Fournee chaude, espresso regle, banquette au soleil.</p>
+        </div>
+        <div class="journal-item">
+          <span>12:00</span>
+          <p>Sandwich focaccia, salade croquante, iced latte a emporter.</p>
+        </div>
+        <div class="journal-item">
+          <span>16:30</span>
+          <p>Cookie sel fume, batch brew rond, playlist plus lente.</p>
+        </div>
+      </section>
+
+      <section id="adresse" class="visit" aria-labelledby="visit-title">
+        <div class="visit-card">
+          <p class="section-kicker">Hearty Coffee</p>
+          <h2 id="visit-title">Ouvert tous les jours au coeur du quartier.</h2>
+          <dl>
+            <div>
+              <dt>Adresse</dt>
+              <dd>18 rue des Tilleuls, 75011 Paris</dd>
+            </div>
+            <div>
+              <dt>Horaires</dt>
+              <dd>Lun - Ven 07:30 - 18:30<br />Sam - Dim 08:30 - 17:00</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd>hello@heartycoffee.fr<br />01 42 00 00 00</dd>
+            </div>
+          </dl>
+        </div>
+        <form class="newsletter" aria-label="Recevoir les nouveautes Hearty Coffee">
+          <label for="email">Recevoir le cafe du mois</label>
+          <div class="form-row">
+            <input id="email" name="email" type="email" placeholder="email@exemple.fr" />
+            <button class="button dark" type="submit">OK</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Hearty Coffee</p>
+      <div>
+        <a href="#menu">Carte</a>
+        <a href="#atelier">Grains</a>
+        <a href="#top">Retour</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
